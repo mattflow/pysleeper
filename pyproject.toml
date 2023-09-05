@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pysleeper"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "sleeper", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.tests.dependencies]
+pytest = "^7.4.1"
+
+
+[tool.poetry.group.notebooks.dependencies]
+jupyterlab = "^4.0.5"
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs-material = "^9.2.8"
+mkdocstrings = {extras = ["python"], version = "^0.23.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,8 @@
+site_name: PySleeper
+
+theme:
+  name: material
+
+plugins:
+  - search
+  - mkdocstrings
