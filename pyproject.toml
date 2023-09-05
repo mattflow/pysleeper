@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "sleeper", from = "src"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.9,<3.12"
 
 
 [tool.poetry.group.tests.dependencies]
