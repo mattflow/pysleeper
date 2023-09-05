@@ -29,4 +29,4 @@ jobs:
           python -m poetry install --without docs,notebooks
       - name: Test with pytest
         run: |
-          pytest
+          python -m poetry run pytest
