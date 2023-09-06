@@ -29,7 +29,7 @@ jobs:
           python -m poetry install
       - name: Lint with pre-commit
         run: |
-          python -m pre-commit run --all-files
+          python -m poetry run pre-commit run --all-files
       - name: Test with pytest
         run: |
           python -m poetry run pytest
