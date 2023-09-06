@@ -27,6 +27,23 @@ optional = true
 mkdocs-material = "^9.2.8"
 mkdocstrings = {extras = ["python"], version = "^0.23.0"}
 
+
+[tool.poetry.group.lint.dependencies]
+pre-commit = "^3.4.0"
+black = "^23.7.0"
+isort = "^5.12.0"
+autoflake = "^2.2.1"
+
+
+[tool.poetry.group.type.dependencies]
+pyright = "^1.1.325"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.autoflake]
+remove-all-unused-imports = true
+
+[tool.isort]
+profile = "black"
